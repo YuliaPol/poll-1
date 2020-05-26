@@ -1,0 +1,456 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #5d5d5d;
+}
+
+body .container {
+  max-width: 400px;
+  margin: auto;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body .container .header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 25px 35px;
+  background-color: #1e1e1e;
+}
+
+body .container .header .logo {
+  max-width: 100%;
+}
+
+body .container .header .logo img {
+  max-width: 100%;
+}
+
+body .container .content {
+  background-color: #2e2e2e;
+}
+
+body .container .content .quotes-container {
+  padding-top: 20px;
+  padding-bottom: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+body .container .content .quotes-container .quotes {
+  margin: auto;
+  max-width: 300px;
+  padding-top: 20px;
+  padding-right: 35px;
+  padding-left: 40px;
+  padding-bottom: 80px;
+  background: url(../img/quotes.png);
+  -webkit-background-size: 100% 100%;
+          background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body .container .content .quotes-container .quotes .title {
+  color: #d5274e;
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 1.5;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body .container .content .quotes-container .quotes .after-title {
+  color: #ffffff;
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 1.5;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body .container .content .quotes-container .quotes .text {
+  color: #cccccc;
+  font-size: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 1.5;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body .container .content .quotes-container .quotes .ps-text {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 1.5;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body .container .content .form-group {
+  background: #2e2e2e;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 25px;
+  width: 100%;
+}
+
+body .container .content .form-group fieldset {
+  border: 1px solid #181818;
+  border-radius: 10px;
+  width: 100%;
+}
+
+body .container .content .form-group fieldset legend {
+  color: #898888;
+  text-transform: upper-case;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+body .container .content .form-group fieldset input {
+  background: #2e2e2e;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: #5670a9;
+  font-size: 14px;
+  padding: 10px 15px 5px;
+}
+
+body .container .content .form-group fieldset input::-webkit-input-placeholder {
+  color: #000000;
+}
+
+body .container .content .form-group fieldset input::-moz-placeholder {
+  color: #000000;
+}
+
+body .container .content .form-group fieldset input:-ms-input-placeholder {
+  color: #000000;
+}
+
+body .container .content .form-group fieldset input::-ms-input-placeholder {
+  color: #000000;
+}
+
+body .container .content .form-group fieldset input::placeholder {
+  color: #000000;
+}
+
+body .container .content .form-group.textarea-group {
+  background-color: #181818;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  width: 100%;
+}
+
+body .container .content .form-group.textarea-group fieldset {
+  border: 1px solid #cccccc;
+}
+
+body .container .content .form-group.textarea-group legend {
+  color: #d5274e;
+}
+
+body .container .content .form-group.textarea-group textarea {
+  width: 100%;
+  background-image: url(../img/textarea-bg.png);
+  background-color: #181818;
+  background-position: 90% 25px;
+  -webkit-background-size: 30px 30px;
+          background-size: 30px;
+  background-repeat: no-repeat;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-weight: 100;
+  font-size: 14px;
+  resize: none;
+  padding: 10px 15px 5px;
+}
+
+body .container .content .form-group.textarea-group textarea:focus {
+  caret-color: #d5274e;
+}
+
+body .container .content .form-group.textarea-group.focus-mode {
+  background: #474747;
+}
+
+body .container .content .form-group.textarea-group.focus-mode textarea {
+  background-image: url(../img/textarea-bg-active.png);
+  background-color: #474747;
+}
+
+body .container .content .questions-group {
+  background: #2e2e2e;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 25px;
+  width: 100%;
+}
+
+body .container .content .questions-group .gren-text {
+  color: #50ae70;
+  text-transform: upper-case;
+  font-size: 14px;
+  font-weight: 300;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+body .container .content .questions-group .textarea-cont {
+  padding-top: 13px;
+  border-bottom: 1px solid #898888;
+  padding-bottom: 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+body .container .content .questions-group .textarea-cont .number {
+  display: block;
+  color: #898888;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+body .container .content .questions-group .textarea-cont textarea {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-weight: 100;
+  font-size: 14px;
+  padding: 0px 15px;
+  width: 100%;
+}
+
+body .container .content .questions-group .textarea-cont textarea.autoresizing {
+  overflow: hidden;
+  resize: none;
+}
+
+body .container .content .questions-group .textarea-cont.focus-mode .number {
+  color: #50ae70;
+}
+
+body .container .content .media-cont {
+  padding: 40px 20px;
+  background: #2e2e2e;
+}
+
+body .container .content .media-cont .text-cont {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .container .content .media-cont .text-cont .text {
+  position: relative;
+  color: #898888;
+  font-size: 14px;
+  padding-left: 30px;
+  text-align: left;
+  line-height: 1.5;
+}
+
+body .container .content .media-cont .text-cont .text .right-text {
+  text-align: right;
+}
+
+body .container .content .media-cont .text-cont .text a {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #d5274e;
+  text-decoration: none;
+}
+
+body .container .content .media-cont .text-cont .text::before {
+  content: "";
+  background: url(../img/like.png);
+  background-position: center;
+  -webkit-background-size: 100% 100%;
+          background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  top: 2px;
+  left: 0px;
+}
+
+body .container .content .media-cont .text-cont .audio-cont {
+  width: 70px;
+  padding-left: 15px;
+}
+
+body .container .content .media-cont .text-cont .audio-cont img {
+  max-width: 100%;
+}
+
+body .container .content .media-cont .file-upload {
+  display: none;
+}
+
+body .container .content .media-cont .files-name {
+  color: #cccccc;
+  font-size: 12px;
+  line-height: 1.5;
+  padding-top: 10px;
+}
+
+body .container .content .contact-group {
+  padding: 10px 15px 20px;
+  background: #474747;
+}
+
+body .container .content .contact-group .text {
+  font-size: 14px;
+  color: #000;
+  line-height: 1.5;
+}
+
+body .container .content .contact-group .form-group {
+  background: #474747;
+  width: 100%;
+  padding: 10px 0px 0px;
+}
+
+body .container .content .contact-group .form-group label {
+  color: white;
+  font-size: 14px;
+}
+
+body .container .content .contact-group .form-group input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #5d5d5d;
+  width: 100%;
+  outline: none;
+  padding-bottom: 8px;
+  padding-top: 3px;
+  padding-left: 50px;
+}
+
+body .container .content .contact-group .form-group .under-text {
+  color: #2e2e2e;
+  font-size: 8px;
+  padding-top: 4px;
+}
+
+body .container .content .submit-cont {
+  padding: 25px;
+  text-align: center;
+}
+
+body .container .content .submit-cont .btn-submit {
+  outline: none;
+  padding: 15px 17px;
+  background: url(../img/bg-submit.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 100%;
+          background-size: 100%;
+  background-position: center;
+  border: none;
+  color: #d5274e;
+  font-size: 14px;
+}
+
+body .container .content .submit-cont .btn-submit:hover {
+  background: url(../img/bg-submit-active.png);
+  color: #2e2e2e;
+}
+
+.answer {
+  background: #1e1e1e;
+  padding: 25px 25px 70px;
+  text-align: center;
+}
+
+.answer img {
+  max-width: 100%;
+  width: 220px;
+}
+/*# sourceMappingURL=style.css.map */

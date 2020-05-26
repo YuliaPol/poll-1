@@ -1,0 +1,353 @@
+$pink: #d5274e;
+$white: #ffffff;
+$light-grey: #cccccc;
+$medium-grey: #898888;
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #5d5d5d;
+    .container {
+        max-width: 400px;
+        margin: auto;
+        font-family: 'Open Sans', sans-serif;
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 25px 35px;
+            background-color: #1e1e1e;
+            .logo {
+                max-width: 100%;
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+        .content {
+            background-color: #2e2e2e;
+            .quotes-container {
+                padding-top: 20px;
+                padding-bottom: 15px;
+                padding-left: 5px;
+                padding-right: 5px;
+                .quotes {
+                    margin: auto;
+                    max-width: 300px;
+                    padding-top: 20px;
+                    padding-right: 35px;
+                    padding-left: 40px;
+                    padding-bottom: 80px;
+                    background: url(../img/quotes.png);
+                    background-size: 100% 100%;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    .title {
+                        color: $pink;
+                        font-size: 12px;
+                        text-transform: uppercase;
+                        line-height: 1.5;
+                        font-family: 'Open Sans', sans-serif;
+                    }
+                    .after-title {
+                        color: $white;
+                        font-size: 12px;
+                        text-transform: uppercase;
+                        line-height: 1.5;
+                        font-family: 'Open Sans', sans-serif;
+                    }
+                    .text {
+                        color: $light-grey;
+                        font-size: 10px;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        line-height: 1.5;
+                        font-family: 'Open Sans', sans-serif;
+                    }
+                    .ps-text {
+                        color: $white;
+                        font-weight: 600;
+                        font-size: 10px;
+                        line-height: 1.5; 
+                        font-family: 'Open Sans', sans-serif;
+                    }
+                }
+            }
+            .form-group {
+                background: #2e2e2e;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-bottom: 25px;
+                width: 100%;
+                fieldset {
+                    border: 1px solid #181818;
+                    border-radius: 10px;
+                    width: 100%;
+                    legend {
+                        color: $medium-grey;
+                        text-transform: upper-case;
+                        font-size: 14px;
+                        font-weight: 100;
+                    }
+                    input {
+                        background: #2e2e2e;
+                        border: none;
+                        outline: none;
+                        width: 100%;
+                        color: #5670a9;
+                        font-size: 14px;
+                        padding: 10px 15px 5px;
+                        &::placeholder {
+                            color: #000000;
+                        }
+                    }
+                }
+                &.textarea-group {
+                    background-color: #181818;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    padding-bottom: 20px;
+                    padding-top: 20px;
+                    width: 100%;
+                    fieldset {
+                        border: 1px solid #cccccc;
+                    }
+                    legend {
+                        color: $pink;
+                    }
+                    textarea {
+                        width: 100%;
+                        background-image: url(../img/textarea-bg.png);
+                        background-color: #181818;
+                        background-position: 90% 25px;
+                        background-size: 30px;
+                        background-repeat: no-repeat;
+                        border: none;
+                        outline: none;
+                        color: #ffffff;
+                        font-weight: 100;
+                        font-size: 14px;
+                        resize: none;
+                        padding: 10px 15px 5px;
+                        &:focus {
+                            caret-color: $pink;
+                        }
+                    }
+                    &.focus-mode {
+                        background: #474747;
+                        textarea {
+                            background-image: url(../img/textarea-bg-active.png);
+                            background-color: #474747;
+                        }
+                    }
+                }
+            }
+            .questions-group {
+                background: #2e2e2e;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-bottom: 25px;
+                width: 100%;
+                .gren-text {
+                    color: #50ae70;
+                    text-transform: upper-case;
+                    font-size: 14px;
+                    font-weight: 300;
+                    padding-top: 15px;
+                    padding-left: 15px;
+                }
+                .textarea-cont {
+                    padding-top: 13px;
+                    border-bottom: 1px solid #898888;
+                    padding-bottom: 3px;
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    .number {
+                        display: block;
+                        color: #898888;
+                        font-weight: 600;
+                        font-size: 14px;
+                    }
+                    textarea {
+                        background: transparent;
+                        border: none;
+                        outline: none;
+                        color: #ffffff;
+                        font-weight: 100;
+                        font-size: 14px;
+                        padding: 0px 15px;
+                        width: 100%;
+                        &.autoresizing {
+                            overflow: hidden;
+                           resize: none;
+                        }
+                    }
+                    &.focus-mode .number {
+                        color: #50ae70;
+                    }
+                }
+            }
+            .media-cont {
+                padding: 40px 20px;
+                background: #2e2e2e;
+                .text-cont {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .text {
+                        position: relative;
+                        color: #898888;
+                        font-size: 14px;
+                        padding-left: 30px;
+                        text-align: left;
+                        line-height: 1.5;
+                        .right-text {
+                            text-align: right;
+                        }
+                        a {
+                            text-transform: uppercase;
+                            font-size: 16px;
+                            color: $pink;
+                            text-decoration: none;
+                        }
+                        &::before {
+                            content: "";
+                            background: url(../img/like.png);
+                            background-position: center;
+                            background-size: 100%;
+                            background-repeat: no-repeat;
+                            position: absolute;
+                            display: block;
+                            width: 20px;
+                            height: 20px;
+                            top: 2px;
+                            left: 0px;
+                        }
+                    }
+                    .audio-cont {
+                        width: 70px;
+                        padding-left: 15px;
+                        img {
+                            max-width: 100%;
+                        }
+                    }
+                }
+                .file-upload {
+                    display: none;
+                }
+                .files-name {
+                    color: #cccccc;
+                    font-size: 12px;
+                    line-height: 1.5;
+                    padding-top: 10px;
+                }
+            }
+            .contact-group {
+                padding: 10px 15px 20px;
+                background: #474747;
+                .text {
+                    font-size: 14px;
+                    color: #000;
+                    line-height: 1.5;
+                }
+                .form-group {
+                    background: #474747;
+                    width: 100%;
+                    padding: 10px 0px 0px;
+                    label {
+                        color: white;
+                        font-size: 14px;
+                    }
+                    input {
+                        background: transparent;
+                        border: none;
+                        border-bottom: 1px solid #5d5d5d;
+                        width: 100%;
+                        outline: none;
+                        padding-bottom: 8px;
+                        padding-top: 3px;
+                        padding-left: 50px;
+                    }
+                    .under-text {
+                        color: #2e2e2e;
+                        font-size: 8px;
+                        padding-top: 4px;
+                    }
+                }
+            }
+            .submit-cont {
+                padding: 25px;
+                text-align: center;
+                .btn-submit {
+                    outline: none;
+                    padding: 15px 17px;
+                    background: url(../img/bg-submit.png);
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    background-position: center;
+                    border: none;
+                    color: $pink;
+                    font-size: 14px;
+                    &:hover {
+                        background: url(../img/bg-submit-active.png);
+                        color: #2e2e2e;
+                    }
+                }
+            }
+        }
+    }
+}
+.answer {
+    background: #1e1e1e;
+    padding: 25px 25px 70px;
+    text-align: center;
+    img {
+        max-width: 100%;
+        width: 220px;
+    }
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Опрос</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="./img/header.png" alt="">
+            </div>
+        </div>
+        <div class="content">
+            <div class="quotes-container">
+                <div class="quotes">
+                    <div class="title">
+                        Столкнулись с идиотизмом в обслуживании?
+                    </div>
+                    <div class="after-title">
+                        Давай исправим это!
+                    </div>
+                    <div class="text">
+                        Расскажи всё, что было, и Мы обязательно передадим эту информацию руководству компаний.
+                    </div>
+                    <div class="ps-text">
+                        P.S. Следи за нашей лентой в соц. сетях!
+                    </div>
+                </div>
+            </div>
+            <div class="form-container">
+                <form action="./answer.html">
+                    <div class="form-group">
+                        <fieldset>
+                            <legend>
+                                КОМПАНИЯ:
+                            </legend>
+                            <input type="text" name="q-1">
+                        </fieldset>
+                    </div>
+                    <div class="form-group">
+                        <fieldset>
+                            <legend>
+                                ГОРОД:
+                            </legend>
+                            <input type="text" name="q-2">
+                        </fieldset>
+                    </div>
+                    <div class="form-group">
+                        <fieldset>
+                            <legend>
+                                КОГДА:
+                            </legend>
+                            <input type="text" name="q-3" placeholder="ДД.ММ.ГГГГ">
+                        </fieldset>
+                    </div>
+                    <div class="form-group textarea-group">
+                        <fieldset>
+                            <legend>
+                                ИДИОТСКАЯ СИТУАЦИЯ:
+                            </legend>
+                            <textarea name="q-4" cols="30" rows="5"></textarea>
+                        </fieldset>
+                    </div>
+                    <div class="questions-group">
+                        <div class="gren-text">Какое решение Вы видите</div>
+                        <div class="textarea-cont">
+                            <span class="number">1. </span>
+                            <textarea name="q-5-1" cols="30" rows="1" class="autoresizing"></textarea>
+                        </div>
+                        <div class="textarea-cont">
+                            <span class="number">2. </span>
+                            <textarea name="q-5-2" cols="30" rows="1" class="autoresizing"></textarea>
+                        </div>
+                        <div class="textarea-cont">
+                            <span class="number">3. </span>
+                            <textarea name="q-5-3" cols="30" rows="1" class="autoresizing"></textarea>
+                        </div>
+                    </div>
+                    <div class="media-cont">
+                        <div class="text-cont">
+                            <div class="text">
+                                Ваш <a href="javascript:void(0);" class="audio-upload">аудио</a> отзыв важен для нас,
+                                <p class="right-text">также, как и <a href="javascript:void(0);" class="image-upload">фото</a>, и <a
+                                    href="javascript:void(0);" class="video-upload">видео</a></p>
+                            </div>
+                            <div class="audio-cont">
+                                <a href="javascript:void(0);" class="audio-upload">
+                                    <img src="./img/audio.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="files-name">
+                            <div class="image-name"></div>
+                            <div class="video-name"></div>
+                            <div class="audio-name"></div>
+                        </div>
+                        <input type="file" accept="image/*" name="q-6-1" capture="camera" class="file-upload file-image">
+                        <input type="file" accept="video/*" name="q-6-2"  capture="camera" class="file-upload file-video">
+                        <input type="file" accept="audio/*" name="q-6-3"  class="file-upload file-audio">
+                    </div>
+                    <div class="contact-group">
+                        <div class="text">
+                            Оставьте ваши контактные данные, чтобы мы могли уточнить детали и сообщить решение:
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                ФИО
+                                <input type="text" name="7">
+                            </label>
+                            <p class="under-text">
+                                * Поле не обязательно для заполнения
+                            </p>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                Телефон
+                                <input type="text" name="8">
+                            </label>
+                            <p class="under-text">
+                                * Поле не обязательно для заполнения
+                            </p>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                E-mail
+                                <input type="text" name="9">
+                            </label>
+                            <p class="under-text">
+                                * Поле не обязательно для заполнения
+                            </p>
+                        </div>
+                    </div>
+                    <div class="submit-cont">
+                        <input type="submit" value="Исправить это!" class="btn-submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
