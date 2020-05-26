@@ -4,12 +4,6 @@ jQuery(function ($) {
         //mask 
         $('.date').mask('99.99.9999');
         $('.phone').ForceNumericOnly();
-        $('.phone').keyup(function(e) {
-            var max = 15;
-            if ($('.phone').val().length > max) {
-                $('.phone').val($('.phone').val().substr(0, max));
-            }
-        });
         $('.textarea-group textarea').focusin( function(){
             $(this).parents('.textarea-group').addClass('focus-mode');
         });
@@ -57,6 +51,10 @@ function()
     {
         $(this).keydown(function(e)
         {
+            var max = 15;
+            if ($('.phone').val().length > max) {
+                $('.phone').val($('.phone').val().substr(0, max));
+            }
             var key = e.charCode || e.keyCode || 0;
             // allow backspace, tab, delete, enter, arrows, numbers and keypad numbers ONLY
             // home, end, period, and numpad decimal
