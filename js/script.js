@@ -4,6 +4,12 @@ jQuery(function ($) {
         //mask 
         $('.date').mask('99.99.9999');
         $('.phone').ForceNumericOnly();
+        $('.phone').keyup(function(e) {
+            var max = 15;
+            if ($('.phone').val().length > max) {
+                $('.phone').val($('.phone').val().substr(0, max));
+            }
+        });
         $('.textarea-group textarea').focusin( function(){
             $(this).parents('.textarea-group').addClass('focus-mode');
         });
