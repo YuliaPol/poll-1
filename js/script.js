@@ -51,8 +51,6 @@ jQuery.fn.ForceNumericOnly =
                 var max = 15;
                 if ($('.phone').val().length < max) {
                     var key = e.charCode || e.keyCode || 0;
-                    // allow backspace, tab, delete, enter, arrows, numbers and keypad numbers ONLY
-                    // home, end, period, and numpad decimal
                     return (
                         key == 8 ||
                         key == 9 ||
