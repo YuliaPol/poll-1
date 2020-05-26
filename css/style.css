@@ -372,10 +372,6 @@ body .container .content .media-cont .text-cont .audio-cont img {
   max-width: 100%;
 }
 
-body .container .content .media-cont .file-upload {
-  display: none;
-}
-
 body .container .content .media-cont .files-name {
   color: #cccccc;
   font-size: 12px;
