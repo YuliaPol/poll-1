@@ -55,12 +55,14 @@ table {
 
 body {
   background-color: #5d5d5d;
+  min-height: 100vh;
 }
 
 body .container {
   max-width: 400px;
   margin: auto;
   font-family: 'Open Sans', sans-serif;
+  min-height: 100vh;
 }
 
 body .container .header {
@@ -443,13 +445,18 @@ body .container .content .submit-cont .btn-submit:hover {
   color: #2e2e2e;
 }
 
-.answer {
+.answer-conatainer {
+  background: #1e1e1e;
+  min-height: 100vh;
+}
+
+.answer-conatainer .answer {
   background: #1e1e1e;
   padding: 25px 25px 70px;
   text-align: center;
 }
 
-.answer img {
+.answer-conatainer .answer img {
   max-width: 100%;
   width: 220px;
 }
