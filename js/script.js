@@ -39,5 +39,8 @@ jQuery(function ($) {
             $('.audio-cont img').attr('src', './img/audio-active.png');
         });
 
+        //mask 
+        $('.date').mask('99.99.9999');
+        $('.phone').mask('9(999) 999-9999');
     });
 });

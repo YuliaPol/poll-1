@@ -442,6 +442,10 @@ body .container .content .submit-cont .btn-submit {
 
 body .container .content .submit-cont .btn-submit:hover {
   background: url(../img/bg-submit-active.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 100%;
+          background-size: 100%;
+  background-position: center;
   color: #2e2e2e;
 }
 

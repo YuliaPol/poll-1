@@ -337,6 +337,9 @@ body {
                     font-size: 14px;
                     &:hover {
                         background: url(../img/bg-submit-active.png);
+                        background-repeat: no-repeat;
+                        background-size: 100%;
+                        background-position: center;
                         color: #2e2e2e;
                     }
                 }
