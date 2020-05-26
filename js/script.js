@@ -1,5 +1,10 @@
 jQuery(function ($) {
     $(document).ready(function () {
+        
+        //mask 
+        $('.date').mask('99.99.9999');
+        $('.phone').mask('9(999) 999-9999');
+        
         $('.textarea-group textarea').focusin( function(){
             $(this).parents('.textarea-group').addClass('focus-mode');
         });
@@ -38,9 +43,5 @@ jQuery(function ($) {
             $('.audio-name').html(this.files[0].name);
             $('.audio-cont img').attr('src', './img/audio-active.png');
         });
-
-        //mask 
-        $('.date').mask('99.99.9999');
-        $('.phone').mask('9(999) 999-9999');
     });
 });
