@@ -3,7 +3,6 @@ jQuery(function ($) {
         
         //mask 
         $('.date').mask('99.99.9999');
-        $('.phone').mask('9(999) 999-9999');
         
         $('.textarea-group textarea').focusin( function(){
             $(this).parents('.textarea-group').addClass('focus-mode');

@@ -124,7 +124,7 @@
                         <div class="form-group">
                             <label>
                                 Телефон
-                                <input type="text" name="q-8" class="phone" minlength="15">
+                                <input type="text" name="q-8" class="phone" minlength="15" onkeypress='return event.charCode >= 48 && event.charCode <= 57' maxlength="13">
                             </label>
                             <p class="under-text">
                                 * Поле не обязательно для заполнения
