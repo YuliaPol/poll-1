@@ -104,7 +104,7 @@ body {
                     }
                     .text {
                         color: $light-grey;
-                        font-size: 10px;
+                        font-size: 13px;
                         padding-top: 10px;
                         padding-bottom: 10px;
                         line-height: 1.5;
@@ -125,6 +125,42 @@ body {
                 padding-right: 20px;
                 padding-bottom: 25px;
                 width: 100%;
+                .input-bg {
+                    padding-top: 15px;
+                    padding-bottom: 5px;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                    &.company {
+                        background-image: url(../img/company-bg.png);
+                        background-position: center;
+                        background-size: 100%;
+                        background-repeat: no-repeat;
+                    }
+                    &.city {
+                        background-image: url(../img/city-bg.png);
+                        background-position: center;
+                        background-size: 100%;
+                        background-repeat: no-repeat;
+                    }
+                    &.when {
+                        background-image: url(../img/when-bg.png);
+                        background-position: center;
+                        background-size: 100%;
+                        background-repeat: no-repeat;
+                    }
+                    input {
+                        background: transparent;
+                        border: none;
+                        outline: none;
+                        width: 100%;
+                        color: #5670a9;
+                        font-size: 14px;
+                        padding: 10px 15px 5px;
+                        &::placeholder {
+                            color: #000000;
+                        }
+                    }
+                }
                 fieldset {
                     border: 1px solid #181818;
                     border-radius: 10px;
@@ -155,6 +191,10 @@ body {
                     padding-bottom: 20px;
                     padding-top: 20px;
                     width: 100%;
+                    background-image: url(../img/situation-bg.png);;
+                    background-size: 100%;
+                    background-position: center;
+                    background-repeat: no-repeat;
                     fieldset {
                         border: 1px solid #cccccc;
                     }
@@ -163,11 +203,7 @@ body {
                     }
                     textarea {
                         width: 100%;
-                        background-image: url(../img/textarea-bg.png);
-                        background-color: #181818;
-                        background-position: 90% 25px;
-                        background-size: 30px;
-                        background-repeat: no-repeat;
+                        background-color: transparent;
                         border: none;
                         outline: none;
                         color: #ffffff;
@@ -180,11 +216,7 @@ body {
                         }
                     }
                     &.focus-mode {
-                        background: #474747;
-                        textarea {
-                            background-image: url(../img/textarea-bg-active.png);
-                            background-color: #474747;
-                        }
+                        background-image: url(../img/situation-active-bg.png);
                     }
                 }
             }
@@ -237,26 +269,12 @@ body {
             .media-cont {
                 padding: 40px 20px;
                 background: #2e2e2e;
-                .text-cont {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                &.media-upload {
+                    padding-top: 0px;
+                }
+                &.media-record {
+                    padding-bottom: 10px;
                     .text {
-                        position: relative;
-                        color: #898888;
-                        font-size: 14px;
-                        padding-left: 30px;
-                        text-align: left;
-                        line-height: 1.5;
-                        .right-text {
-                            text-align: right;
-                        }
-                        a {
-                            text-transform: uppercase;
-                            font-size: 16px;
-                            color: $pink;
-                            text-decoration: none;
-                        }
                         &::before {
                             content: "";
                             background: url(../img/like.png);
@@ -269,6 +287,34 @@ body {
                             height: 20px;
                             top: 2px;
                             left: 0px;
+                        }
+                    }
+                }
+                .text-cont {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .text {
+                        position: relative;
+                        color: #898888;
+                        font-size: 12px;
+                        padding-left: 30px;
+                        text-align: left;
+                        line-height: 1.5;
+                        .cont-wrapp  {
+                            p {
+                                font-size: 12px;
+                            }
+                        }
+                        .right-text {
+                            text-align: right;
+                        }
+                        a,
+                        .pink-word {
+                            cursor: pointer;
+                            text-transform: uppercase;
+                            color: $pink;
+                            text-decoration: none;
                         }
                     }
                     .audio-cont {
@@ -359,4 +405,69 @@ body {
             width: 220px;
         }
     }
+}
+.record-wrapper{
+#controls{
+    display: flex;
+    .rec-button{
+    color: #ffffff;
+    background-color: transparent;
+    text-transform: uppercase;
+    outline: none;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 0px;
+    display: block;
+    position: relative;
+    border: 1px solid #ff4063;
+    margin-left: 10px;
+    }
+    #recordButton{
+    padding: 5px 20px 5px 40px;
+    .record-icon{
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        left: 14px;
+        top: 3px;
+        background-image: url("../img/rec-icon.png");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .re-rec-icon{
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        left: 14px;
+        top: 3px;
+        background-image: url("../img/re-rec-icon.png");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    }
+    #stopButton{
+    padding: 5px 17px 5px 38px;
+    .stop-record-icon{
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        left: 16px;
+        top: 4px;
+        background-image: url(../img/stop-icon.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    }
+}
+#formats{
+    font-size: 10px;
+    padding: 10px;
+}
 }

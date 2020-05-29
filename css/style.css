@@ -133,7 +133,7 @@ body .container .content .quotes-container .quotes .after-title {
 
 body .container .content .quotes-container .quotes .text {
   color: #cccccc;
-  font-size: 10px;
+  font-size: 13px;
   padding-top: 10px;
   padding-bottom: 10px;
   line-height: 1.5;
@@ -154,6 +154,67 @@ body .container .content .form-group {
   padding-right: 20px;
   padding-bottom: 25px;
   width: 100%;
+}
+
+body .container .content .form-group .input-bg {
+  padding-top: 15px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+body .container .content .form-group .input-bg.company {
+  background-image: url(../img/company-bg.png);
+  background-position: center;
+  -webkit-background-size: 100% 100%;
+          background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+body .container .content .form-group .input-bg.city {
+  background-image: url(../img/city-bg.png);
+  background-position: center;
+  -webkit-background-size: 100% 100%;
+          background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+body .container .content .form-group .input-bg.when {
+  background-image: url(../img/when-bg.png);
+  background-position: center;
+  -webkit-background-size: 100% 100%;
+          background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+body .container .content .form-group .input-bg input {
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: #5670a9;
+  font-size: 14px;
+  padding: 10px 15px 5px;
+}
+
+body .container .content .form-group .input-bg input::-webkit-input-placeholder {
+  color: #000000;
+}
+
+body .container .content .form-group .input-bg input::-moz-placeholder {
+  color: #000000;
+}
+
+body .container .content .form-group .input-bg input:-ms-input-placeholder {
+  color: #000000;
+}
+
+body .container .content .form-group .input-bg input::-ms-input-placeholder {
+  color: #000000;
+}
+
+body .container .content .form-group .input-bg input::placeholder {
+  color: #000000;
 }
 
 body .container .content .form-group fieldset {
@@ -206,6 +267,11 @@ body .container .content .form-group.textarea-group {
   padding-bottom: 20px;
   padding-top: 20px;
   width: 100%;
+  background-image: url(../img/situation-bg.png);
+  -webkit-background-size: 100% 100%;
+          background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 body .container .content .form-group.textarea-group fieldset {
@@ -218,12 +284,7 @@ body .container .content .form-group.textarea-group legend {
 
 body .container .content .form-group.textarea-group textarea {
   width: 100%;
-  background-image: url(../img/textarea-bg.png);
-  background-color: #181818;
-  background-position: 90% 25px;
-  -webkit-background-size: 30px 30px;
-          background-size: 30px;
-  background-repeat: no-repeat;
+  background-color: transparent;
   border: none;
   outline: none;
   color: #ffffff;
@@ -238,12 +299,7 @@ body .container .content .form-group.textarea-group textarea:focus {
 }
 
 body .container .content .form-group.textarea-group.focus-mode {
-  background: #474747;
-}
-
-body .container .content .form-group.textarea-group.focus-mode textarea {
-  background-image: url(../img/textarea-bg-active.png);
-  background-color: #474747;
+  background-image: url(../img/situation-active-bg.png);
 }
 
 body .container .content .questions-group {
@@ -313,42 +369,15 @@ body .container .content .media-cont {
   background: #2e2e2e;
 }
 
-body .container .content .media-cont .text-cont {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+body .container .content .media-cont.media-upload {
+  padding-top: 0px;
 }
 
-body .container .content .media-cont .text-cont .text {
-  position: relative;
-  color: #898888;
-  font-size: 14px;
-  padding-left: 30px;
-  text-align: left;
-  line-height: 1.5;
+body .container .content .media-cont.media-record {
+  padding-bottom: 10px;
 }
 
-body .container .content .media-cont .text-cont .text .right-text {
-  text-align: right;
-}
-
-body .container .content .media-cont .text-cont .text a {
-  text-transform: uppercase;
-  font-size: 16px;
-  color: #d5274e;
-  text-decoration: none;
-}
-
-body .container .content .media-cont .text-cont .text::before {
+body .container .content .media-cont.media-record .text::before {
   content: "";
   background: url(../img/like.png);
   background-position: center;
@@ -361,6 +390,46 @@ body .container .content .media-cont .text-cont .text::before {
   height: 20px;
   top: 2px;
   left: 0px;
+}
+
+body .container .content .media-cont .text-cont {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .container .content .media-cont .text-cont .text {
+  position: relative;
+  color: #898888;
+  font-size: 12px;
+  padding-left: 30px;
+  text-align: left;
+  line-height: 1.5;
+}
+
+body .container .content .media-cont .text-cont .text .cont-wrapp p {
+  font-size: 12px;
+}
+
+body .container .content .media-cont .text-cont .text .right-text {
+  text-align: right;
+}
+
+body .container .content .media-cont .text-cont .text a,
+body .container .content .media-cont .text-cont .text .pink-word {
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #d5274e;
+  text-decoration: none;
 }
 
 body .container .content .media-cont .text-cont .audio-cont {
@@ -463,5 +532,82 @@ body .container .content .submit-cont .btn-submit:hover {
 .answer-conatainer .answer img {
   max-width: 100%;
   width: 220px;
+}
+
+.record-wrapper #controls {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.record-wrapper #controls .rec-button {
+  color: #ffffff;
+  background-color: transparent;
+  text-transform: uppercase;
+  outline: none;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 0px;
+  display: block;
+  position: relative;
+  border: 1px solid #ff4063;
+  margin-left: 10px;
+}
+
+.record-wrapper #controls #recordButton {
+  padding: 5px 20px 5px 40px;
+}
+
+.record-wrapper #controls #recordButton .record-icon {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 14px;
+  top: 3px;
+  background-image: url("../img/rec-icon.png");
+  background-position: center;
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.record-wrapper #controls #recordButton .re-rec-icon {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 14px;
+  top: 3px;
+  background-image: url("../img/re-rec-icon.png");
+  background-position: center;
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.record-wrapper #controls #stopButton {
+  padding: 5px 17px 5px 38px;
+}
+
+.record-wrapper #controls #stopButton .stop-record-icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 16px;
+  top: 4px;
+  background-image: url(../img/stop-icon.png);
+  background-position: center;
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.record-wrapper #formats {
+  font-size: 10px;
+  padding: 10px;
 }
 /*# sourceMappingURL=style.css.map */

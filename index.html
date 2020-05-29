@@ -40,36 +40,24 @@
             <div class="form-container">
                 <form action="./answer.html">
                     <div class="form-group">
-                        <fieldset>
-                            <legend>
-                                КОМПАНИЯ:
-                            </legend>
+                        <div class="input-bg company">
                             <input type="text" name="q-1">
-                        </fieldset>
+                        </div>
                     </div>
                     <div class="form-group">
-                        <fieldset>
-                            <legend>
-                                ГОРОД:
-                            </legend>
+                        <div class="input-bg city">
                             <input type="text" name="q-2">
-                        </fieldset>
+                        </div>
                     </div>
                     <div class="form-group">
-                        <fieldset>
-                            <legend>
-                                КОГДА:
-                            </legend>
+                        <div class="input-bg when">
                             <input type="text" name="q-3" placeholder="ДД.ММ.ГГГГ" class="date">
-                        </fieldset>
+                        </div>
                     </div>
                     <div class="form-group textarea-group">
-                        <fieldset>
-                            <legend>
-                                ИДИОТСКАЯ СИТУАЦИЯ:
-                            </legend>
+                        <div class="input-bg situation">
                             <textarea name="q-4" cols="30" rows="5"></textarea>
-                        </fieldset>
+                        </div>
                     </div>
                     <div class="questions-group">
                         <div class="gren-text">Какое решение Вы видите</div>
@@ -86,12 +74,41 @@
                             <textarea name="q-5-3" cols="30" rows="1" class="autoresizing"></textarea>
                         </div>
                     </div>
-                    <div class="media-cont">
+                    <div class="media-cont media-record">
                         <div class="text-cont">
                             <div class="text">
-                                Ваш <a href="javascript:void(0);" class="audio-upload">аудио</a> отзыв важен для нас,
+                                <div class="cont-wrapp">
+                                    <p>Ваш<span class="pink-word"> Аудио</span> отзыв очень важен для нас</p>
+                                    <div class="micro-icon-wrapper">
+                                        <i class="file-icon-circle"></i>
+                                        <i class="micro-iron"></i>
+                                    </div>
+                                </div>
+                                <!-- Ваш <a href="javascript:void(0);" class="audio-upload">аудио</a> отзыв важен для нас,
                                 <p class="right-text">также, как и <a href="javascript:void(0);" class="image-upload">фото</a>, и <a
-                                    href="javascript:void(0);" class="video-upload">видео</a></p>
+                                    href="javascript:void(0);" class="video-upload">видео</a></p> -->
+                            </div>
+                            <div class="audio-cont">
+                                <a href="javascript:void(0);" class="audio-upload">
+                                    <img src="./img/audio.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="record-wrapper" style="display: none;">
+                            <div id="controls">
+                                <button type="button" id="recordButton" class="rec-button"><i class="record-icon"></i>REC</button>
+                                <button type="button" id="pauseButton" class="rec-button" style="display: none;" disabled>Пауза</button>
+                                <button type="button" id="stopButton" class="rec-button" disabled> <i class="stop-record-icon"></i>STOP</button>
+                            </div>
+                            <div id="formats" style="color: white">Нажмите <span class="pink-word">REC</span> чтобы начать запись</div>
+                            <input name=stopwatch id=stopwatch size=10 value="00:00:00.00" disabled hidden>
+                            <ol id="recordingsList"></ol>
+                        </div>
+                    </div>
+                    <div class="media-cont media-upload">
+                        <div class="text-cont">
+                            <div class="text">
+                                <p class="right-text">также, как и <a href="javascript:void(0);" class="image-upload">фото</a>, и <a href="javascript:void(0);" class="video-upload">видео</a>, <a href="javascript:void(0);" class="audio-upload">аудио</a> файл.</p>
                             </div>
                             <div class="audio-cont">
                                 <a href="javascript:void(0);" class="audio-upload">
@@ -147,6 +164,7 @@
             </div>
         </div>
     </div>
+    <script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
     <script src="./js/script.js"></script>
 </body>
 
