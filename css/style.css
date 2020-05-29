@@ -369,8 +369,8 @@ body .container .content .media-cont {
   background: #2e2e2e;
 }
 
-body .container .content .media-cont.media-upload {
-  padding-top: 0px;
+body .container .content .media-cont.media-upload .text-cont .text {
+  padding-left: 20px;
 }
 
 body .container .content .media-cont.media-record {
