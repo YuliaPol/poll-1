@@ -22,7 +22,7 @@ jQuery(function ($) {
         $('.questions-group textarea').focusout(function () {
             $(this).parents('.textarea-cont').removeClass('focus-mode');
         });
-        $('.audio-upload').click(function () {
+        $('.media-upload .audio-upload').click(function () {
             $('.file-audio').click();
         });
         $('.video-upload').click(function () {
@@ -43,6 +43,10 @@ jQuery(function ($) {
             $('.media-upload .audio-cont img').attr('src', './img/audio-active.png');
         });
         //show recording
+        $('.media-record .audio-upload').click(function () {
+            $('.record-wrapper').fadeIn();
+            $('.media-record .audio-cont img').attr('src', './img/audio-active.png');
+        });
         $('.cont-wrapp').click(function () {
             $('.record-wrapper').fadeIn();
             $('.media-record .audio-cont img').attr('src', './img/audio-active.png');
