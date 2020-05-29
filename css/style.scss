@@ -270,14 +270,16 @@ body {
                 padding: 40px 20px;
                 background: #2e2e2e;
                 &.media-upload {
+                    padding-top: 5px;
                     .text-cont {
                         .text {
                             padding-left: 20px;
                         }
+                        justify-content: flex-end;
                     }
                 }
                 &.media-record {
-                    padding-bottom: 10px;
+                    padding-bottom: 5px;
                     .text {
                         &::before {
                             content: "";
@@ -322,7 +324,7 @@ body {
                         }
                     }
                     .audio-cont {
-                        width: 70px;
+                        width: 55px;
                         padding-left: 15px;
                         img {
                             max-width: 100%;

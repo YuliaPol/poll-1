@@ -369,12 +369,23 @@ body .container .content .media-cont {
   background: #2e2e2e;
 }
 
+body .container .content .media-cont.media-upload {
+  padding-top: 5px;
+}
+
+body .container .content .media-cont.media-upload .text-cont {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 body .container .content .media-cont.media-upload .text-cont .text {
   padding-left: 20px;
 }
 
 body .container .content .media-cont.media-record {
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 body .container .content .media-cont.media-record .text::before {
@@ -433,7 +444,7 @@ body .container .content .media-cont .text-cont .text .pink-word {
 }
 
 body .container .content .media-cont .text-cont .audio-cont {
-  width: 70px;
+  width: 55px;
   padding-left: 15px;
 }
 
