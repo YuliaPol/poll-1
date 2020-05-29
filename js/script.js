@@ -40,7 +40,7 @@ jQuery(function ($) {
         });
         $('.file-audio').change(function () {
             $('.audio-name').html(this.files[0].name);
-            $('.media-upload .audio-cont img').attr('src', './img/upload-audio-active.png');
+            $('.media-upload .audio-cont img').attr('src', './img/upload-audio-active-2.png');
         });
         //show recording
         $('.media-record .audio-upload').click(function () {
