@@ -38,26 +38,40 @@
                 </div>
             </div>
             <div class="form-container">
-                <form action="./answer.html">
+                <form action="./answer.html" id="main-form">
                     <div class="form-group">
                         <div class="input-bg company">
-                            <input type="text" name="q-1">
+                            <input type="text" name="q-1" data-reqired="reqired">
                         </div>
+                        <p class="error">
+                            * Поле обязательно для заполнения
+                        </p>
                     </div>
                     <div class="form-group">
                         <div class="input-bg city">
-                            <input type="text" name="q-2">
+                            <input type="text" name="q-2"  data-reqired="reqired">
                         </div>
+                        <p class="error">
+                            * Поле обязательно для заполнения
+                        </p>
                     </div>
                     <div class="form-group">
                         <div class="input-bg when">
                             <input type="text" name="q-3" placeholder="ДД.ММ.ГГГГ" class="date">
                         </div>
+                        <p class="error">
+                            * Формат даты ДД.ММ.ГГГГ
+                        </p>
                     </div>
                     <div class="form-group textarea-group">
-                        <div class="input-bg situation">
-                            <textarea name="q-4" cols="30" rows="5"></textarea>
+                        <div class="textarea-bg">
+                            <div class="input-bg situation">
+                                <textarea name="q-4" cols="30" rows="5"  data-reqired="reqired"></textarea>
+                            </div>
                         </div>
+                        <p class="error">
+                            * Поле обязательно для заполнения
+                        </p>
                     </div>
                     <div class="questions-group">
                         <div class="gren-text">Какое решение Вы видите</div>

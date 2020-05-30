@@ -51,8 +51,43 @@ jQuery(function ($) {
             $('.record-wrapper').fadeIn();
             $('.media-record .audio-cont img').attr('src', './img/audio-active.png');
         });
+        //valid form
+        var form = document.getElementById('main-form');
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            var el = document.querySelectorAll('[data-reqired]');
+            var erroreArrayElemnts = [];
+            for (var i = 0; i < el.length; i++) {
+                if (el[i].value === '' || el[i].value === ' ' || el[i].value === '-') {
+                    erroreArrayElemnts.push(el[i]);
+                    console.log($(el[i]).parents('.form-group').find('.error'));
+                    $(el[i]).parents('.form-group').find('.error').show();
+                    $(el[i]).focus(function (e) {
+                        $(e.target).parents('.form-group').find('.error').hide();
+                    });
+                }
+            }
+            if ($('.date').val() != '') {
+                var bits = $('.date').val().split('.');
+                var d = new Date(bits[2] + '/' + bits[1] + '/' + bits[0]);
+                if(!(d && (d.getMonth() + 1) == bits[1] && d.getDate() == Number(bits[0]))){
+                    $('.date').parents('.form-group').find('.error').show();
+                    $('.date').focus(function (e) {
+                        $(e.target).parents('.form-group').find('.error').hide();
+                    });
+                }
+            }
+            if (erroreArrayElemnts.length == 0) {
+                form.submit();
+            }
+            if (erroreArrayElemnts.length > 0) {
+                console.log('error');
+                $("html, body").animate({ scrollTop: 0 }, "slow");
+            }
+        });
     });
 });
+
 jQuery.fn.ForceNumericOnly =
     function () {
         return this.each(function () {
