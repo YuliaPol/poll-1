@@ -195,6 +195,7 @@ body {
                     }
                     &.focus-mode  .textarea-bg {
                         background-image: url(../img/situation-active-bg.png);
+                        background-color: #474747;
                     }
                 }
                 .textarea-bg {
@@ -497,4 +498,24 @@ body {
     font-size: 10px;
     padding: 10px;
 }
+}
+@media screen and (min-width: 900px) {
+    body .container {
+        max-width: 500px;
+    }
+    body .container .content .form-group {
+        max-width: 360px;
+        margin: auto;
+        &.textarea-group {
+            width: 100%;
+            max-width: 100%;
+            .textarea-bg {
+                max-width: 360px;
+                margin: auto;
+            }
+        }
+        &.focus-mode {
+            background: #474747;
+        }
+    }
 }

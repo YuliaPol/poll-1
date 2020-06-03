@@ -274,6 +274,7 @@ body .container .content .form-group.textarea-group .error {
 
 body .container .content .form-group.textarea-group.focus-mode .textarea-bg {
   background-image: url(../img/situation-active-bg.png);
+  background-color: #474747;
 }
 
 body .container .content .form-group .textarea-bg {
@@ -645,5 +646,26 @@ body .container .content .submit-cont .btn-submit:hover {
 .record-wrapper #formats {
   font-size: 10px;
   padding: 10px;
+}
+
+@media screen and (min-width: 900px) {
+  body .container {
+    max-width: 500px;
+  }
+  body .container .content .form-group {
+    max-width: 360px;
+    margin: auto;
+  }
+  body .container .content .form-group.textarea-group {
+    width: 100%;
+    max-width: 100%;
+  }
+  body .container .content .form-group.textarea-group .textarea-bg {
+    max-width: 360px;
+    margin: auto;
+  }
+  body .container .content .form-group.focus-mode {
+    background: #474747;
+  }
 }
 /*# sourceMappingURL=style.css.map */
