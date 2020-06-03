@@ -32,7 +32,6 @@ jQuery(function ($) {
             $('.file-image').click();
         });
         $('.file-image').change(function () {
-            console.log(this.files[0].name);
             $('.image-name').html(this.files[0].name);
         });
         $('.file-video').change(function () {

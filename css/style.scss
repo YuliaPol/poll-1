@@ -193,6 +193,9 @@ body {
                         padding-bottom: 25px;
                         width: 100%;
                     }
+                    &.focus-mode  .textarea-bg {
+                        background-image: url(../img/situation-active-bg.png);
+                    }
                 }
                 .textarea-bg {
                     background-color: #181818;
@@ -224,9 +227,6 @@ body {
                         &:focus {
                             caret-color: $pink;
                         }
-                    }
-                    &.focus-mode {
-                        background-image: url(../img/situation-active-bg.png);
                     }
                 }
             }
@@ -379,7 +379,7 @@ body {
                         font-size: 16px;
                     }
                     .under-text {
-                        color: #2e2e2e;
+                        color: #000000;
                         font-size: 8px;
                         padding-top: 4px;
                     }
