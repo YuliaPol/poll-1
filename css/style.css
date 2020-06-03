@@ -386,10 +386,10 @@ body .container .content .media-cont.media-upload {
 }
 
 body .container .content .media-cont.media-upload .text-cont {
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 body .container .content .media-cont.media-upload .text-cont .text {
@@ -435,8 +435,9 @@ body .container .content .media-cont .text-cont .text {
   color: #898888;
   font-size: 12px;
   padding-left: 30px;
-  text-align: left;
   line-height: 1.5;
+  text-align: center;
+  width: 100%;
 }
 
 body .container .content .media-cont .text-cont .text .cont-wrapp p {
@@ -445,6 +446,10 @@ body .container .content .media-cont .text-cont .text .cont-wrapp p {
 
 body .container .content .media-cont .text-cont .text .right-text {
   text-align: right;
+}
+
+body .container .content .media-cont .text-cont .text .center-text {
+  text-align: center;
 }
 
 body .container .content .media-cont .text-cont .text a,

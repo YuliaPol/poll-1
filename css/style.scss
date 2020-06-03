@@ -285,7 +285,7 @@ body {
                         .text {
                             padding-left: 20px;
                         }
-                        justify-content: flex-end;
+                        justify-content: space-between;
                     }
                 }
                 &.media-record {
@@ -315,8 +315,9 @@ body {
                         color: #898888;
                         font-size: 12px;
                         padding-left: 30px;
-                        text-align: left;
                         line-height: 1.5;
+                        text-align: center;
+                        width: 100%;
                         .cont-wrapp  {
                             p {
                                 font-size: 12px;
@@ -324,6 +325,9 @@ body {
                         }
                         .right-text {
                             text-align: right;
+                        }
+                        .center-text {
+                            text-align: center;
                         }
                         a,
                         .pink-word {
