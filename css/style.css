@@ -61,7 +61,7 @@ body {
 body .container {
   max-width: 400px;
   margin: auto;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   min-height: 100vh;
 }
 
@@ -120,7 +120,7 @@ body .container .content .quotes-container .quotes .title {
   font-size: 12px;
   text-transform: uppercase;
   line-height: 1.5;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body .container .content .quotes-container .quotes .after-title {
@@ -128,16 +128,16 @@ body .container .content .quotes-container .quotes .after-title {
   font-size: 12px;
   text-transform: uppercase;
   line-height: 1.5;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body .container .content .quotes-container .quotes .text {
   color: #cccccc;
-  font-size: 13px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  font-size: 10px;
+  padding-top: 8px;
+  padding-bottom: 8x;
   line-height: 1.5;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body .container .content .quotes-container .quotes .ps-text {
@@ -145,7 +145,7 @@ body .container .content .quotes-container .quotes .ps-text {
   font-weight: 600;
   font-size: 10px;
   line-height: 1.5;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body .container .content .form-group {
@@ -164,26 +164,50 @@ body .container .content .form-group .input-bg {
 }
 
 body .container .content .form-group .input-bg.company {
-  background-image: url(../img/company-bg.png);
+  background-image: url(../img/company-bg.svg);
   background-position: center;
   -webkit-background-size: 100% 100%;
-          background-size: 100%;
+          background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
 body .container .content .form-group .input-bg.city {
-  background-image: url(../img/city-bg.png);
+  background-image: url(../img/city-bg.svg);
   background-position: center;
   -webkit-background-size: 100% 100%;
-          background-size: 100%;
+          background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
 body .container .content .form-group .input-bg.when {
-  background-image: url(../img/when-bg.png);
+  background-image: url(../img/when-bg.svg);
   background-position: center;
   -webkit-background-size: 100% 100%;
-          background-size: 100%;
+          background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+body .container .content .form-group .input-bg.company.active {
+  background-image: url(../img/company-active.svg);
+  background-position: center;
+  -webkit-background-size: 100% 100%;
+          background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+body .container .content .form-group .input-bg.city.active {
+  background-image: url(../img/city-active.svg);
+  background-position: center;
+  -webkit-background-size: 100% 100%;
+          background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+body .container .content .form-group .input-bg.when.active {
+  background-image: url(../img/when-active.svg);
+  background-position: center;
+  -webkit-background-size: 100% 100%;
+          background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
@@ -387,6 +411,10 @@ body .container .content .media-cont.media-upload {
 }
 
 body .container .content .media-cont.media-upload .text-cont {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
@@ -401,30 +429,15 @@ body .container .content .media-cont.media-record {
   padding-bottom: 5px;
 }
 
-body .container .content .media-cont.media-record .text::before {
-  content: "";
-  background: url(../img/like.png);
-  background-position: center;
-  -webkit-background-size: 100% 100%;
-          background-size: 100%;
-  background-repeat: no-repeat;
-  position: absolute;
-  display: block;
-  width: 20px;
-  height: 20px;
-  top: 2px;
-  left: 0px;
-}
-
 body .container .content .media-cont .text-cont {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
@@ -435,14 +448,29 @@ body .container .content .media-cont .text-cont .text {
   position: relative;
   color: #898888;
   font-size: 12px;
-  padding-left: 30px;
   line-height: 1.5;
   text-align: center;
   width: 100%;
+  padding-right: 35px;
 }
 
 body .container .content .media-cont .text-cont .text .cont-wrapp p {
   font-size: 12px;
+}
+
+body .container .content .media-cont .text-cont .text .cont-wrapp p::before {
+  content: "";
+  background: url(../img/like.svg);
+  background-position: center;
+  -webkit-background-size: 100% 100%;
+          background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  bottom: 0px;
+  left: 125px;
 }
 
 body .container .content .media-cont .text-cont .text .right-text {
@@ -450,7 +478,7 @@ body .container .content .media-cont .text-cont .text .right-text {
 }
 
 body .container .content .media-cont .text-cont .text .center-text {
-  text-align: center;
+  text-align: right;
 }
 
 body .container .content .media-cont .text-cont .text a,
@@ -462,7 +490,7 @@ body .container .content .media-cont .text-cont .text .pink-word {
 }
 
 body .container .content .media-cont .text-cont .audio-cont {
-  width: 55px;
+  width: 65px;
   padding-left: 15px;
 }
 
@@ -569,6 +597,10 @@ body .container .content .submit-cont .btn-submit:hover {
 .answer-conatainer .answer img {
   max-width: 100%;
   width: 220px;
+}
+
+.record-wrapper {
+  padding-top: 10px;
 }
 
 .record-wrapper #controls {

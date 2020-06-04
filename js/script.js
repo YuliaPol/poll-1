@@ -16,6 +16,13 @@ jQuery(function ($) {
             };
         });
 
+        $('.input-bg input').focusin(function () {
+            $(this).parents('.input-bg').addClass('active');
+        });
+        $('.input-bg input').focusout(function () {
+            $(this).parents('.input-bg').removeClass('active');
+        });
+
         $('.questions-group textarea').focusin(function () {
             $(this).parents('.textarea-cont').addClass('focus-mode');
         });
@@ -33,22 +40,24 @@ jQuery(function ($) {
         });
         $('.file-image').change(function () {
             $('.image-name').html(this.files[0].name);
+            $('.media-upload .audio-cont img').attr('src', './img/upload-audio-2.svg');
         });
         $('.file-video').change(function () {
             $('.video-name').html(this.files[0].name);
+            $('.media-upload .audio-cont img').attr('src', './img/upload-audio-2.svg');
         });
         $('.file-audio').change(function () {
             $('.audio-name').html(this.files[0].name);
-            $('.media-upload .audio-cont img').attr('src', './img/upload-audio-active-2.png');
+            $('.media-upload .audio-cont img').attr('src', './img/upload-audio-2.svg');
         });
         //show recording
         $('.media-record .audio-upload').click(function () {
             $('.record-wrapper').fadeIn();
-            $('.media-record .audio-cont img').attr('src', './img/audio-active.png');
+            $('.media-record .audio-cont img').attr('src', './img/audio-active.svg');
         });
         $('.cont-wrapp').click(function () {
             $('.record-wrapper').fadeIn();
-            $('.media-record .audio-cont img').attr('src', './img/audio-active.png');
+            $('.media-record .audio-cont img').attr('src', './img/audio-active.svg');
         });
         //valid form
         var form = document.getElementById('main-form');

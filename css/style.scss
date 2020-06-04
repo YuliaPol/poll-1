@@ -55,7 +55,7 @@ body {
     .container {
         max-width: 400px;
         margin: auto;
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         min-height: 100vh;
         .header {
             display: flex;
@@ -93,29 +93,29 @@ body {
                         font-size: 12px;
                         text-transform: uppercase;
                         line-height: 1.5;
-                        font-family: 'Open Sans', sans-serif;
+                        font-family: 'Montserrat', sans-serif;
                     }
                     .after-title {
                         color: $white;
                         font-size: 12px;
                         text-transform: uppercase;
                         line-height: 1.5;
-                        font-family: 'Open Sans', sans-serif;
+                        font-family: 'Montserrat', sans-serif;
                     }
                     .text {
                         color: $light-grey;
-                        font-size: 13px;
-                        padding-top: 10px;
-                        padding-bottom: 10px;
+                        font-size: 10px;
+                        padding-top: 8px;
+                        padding-bottom: 8x;
                         line-height: 1.5;
-                        font-family: 'Open Sans', sans-serif;
+                        font-family: 'Montserrat', sans-serif;
                     }
                     .ps-text {
                         color: $white;
                         font-weight: 600;
                         font-size: 10px;
-                        line-height: 1.5; 
-                        font-family: 'Open Sans', sans-serif;
+                        line-height: 1.5;
+                        font-family: 'Montserrat', sans-serif;
                     }
                 }
             }
@@ -131,21 +131,39 @@ body {
                     padding-left: 5px;
                     padding-right: 5px;
                     &.company {
-                        background-image: url(../img/company-bg.png);
+                        background-image: url(../img/company-bg.svg);
                         background-position: center;
-                        background-size: 100%;
+                        background-size: 100% 100%;
                         background-repeat: no-repeat;
                     }
                     &.city {
-                        background-image: url(../img/city-bg.png);
+                        background-image: url(../img/city-bg.svg);
                         background-position: center;
-                        background-size: 100%;
+                        background-size: 100% 100%;
                         background-repeat: no-repeat;
                     }
                     &.when {
-                        background-image: url(../img/when-bg.png);
+                        background-image: url(../img/when-bg.svg);
                         background-position: center;
-                        background-size: 100%;
+                        background-size: 100% 100%;
+                        background-repeat: no-repeat;
+                    }
+                    &.company.active {
+                        background-image: url(../img/company-active.svg);
+                        background-position: center;
+                        background-size: 100% 100%;
+                        background-repeat: no-repeat;
+                    }
+                    &.city.active {
+                        background-image: url(../img/city-active.svg);
+                        background-position: center;
+                        background-size: 100% 100%;
+                        background-repeat: no-repeat;
+                    }
+                    &.when.active {
+                        background-image: url(../img/when-active.svg);
+                        background-position: center;
+                        background-size: 100% 100%;
                         background-repeat: no-repeat;
                     }
                     input {
@@ -283,6 +301,7 @@ body {
                 &.media-upload {
                     padding-top: 5px;
                     .text-cont {
+                        align-items: center;
                         .text {
                             padding-left: 20px;
                         }
@@ -291,44 +310,42 @@ body {
                 }
                 &.media-record {
                     padding-bottom: 5px;
-                    .text {
-                        &::before {
-                            content: "";
-                            background: url(../img/like.png);
-                            background-position: center;
-                            background-size: 100%;
-                            background-repeat: no-repeat;
-                            position: absolute;
-                            display: block;
-                            width: 20px;
-                            height: 20px;
-                            top: 2px;
-                            left: 0px;
-                        }
-                    }
                 }
                 .text-cont {
                     display: flex;
-                    align-items: center;
+                    align-items: flex-end;
                     justify-content: space-between;
                     .text {
                         position: relative;
                         color: #898888;
                         font-size: 12px;
-                        padding-left: 30px;
                         line-height: 1.5;
                         text-align: center;
                         width: 100%;
+                        padding-right: 35px;
                         .cont-wrapp  {
                             p {
                                 font-size: 12px;
+                                &::before {
+                                    content: "";
+                                    background: url(../img/like.svg);
+                                    background-position: center;
+                                    background-size: 100%;
+                                    background-repeat: no-repeat;
+                                    position: absolute;
+                                    display: block;
+                                    width: 20px;
+                                    height: 20px;
+                                    bottom: 0px;
+                                    left: 125px;
+                                }
                             }
                         }
                         .right-text {
                             text-align: right;
                         }
                         .center-text {
-                            text-align: center;
+                            text-align: right;
                         }
                         a,
                         .pink-word {
@@ -339,7 +356,7 @@ body {
                         }
                     }
                     .audio-cont {
-                        width: 55px;
+                        width: 65px;
                         padding-left: 15px;
                         img {
                             max-width: 100%;
@@ -435,6 +452,7 @@ body {
     }
 }
 .record-wrapper{
+    padding-top: 10px;
 #controls{
     display: flex;
     .rec-button{
