@@ -161,6 +161,19 @@ body .container .content .form-group .input-bg {
   padding-bottom: 5px;
   padding-left: 5px;
   padding-right: 5px;
+  position: relative;
+}
+
+body .container .content .form-group .input-bg .name-input {
+  color: #898888;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 200;
+  position: absolute;
+  top: -2px;
+  left: 10px;
+  background: #2e2e2e;
+  padding: 0px 5px;
 }
 
 body .container .content .form-group .input-bg.company {
@@ -303,8 +316,8 @@ body .container .content .form-group.textarea-group.focus-mode .textarea-bg {
 
 body .container .content .form-group .textarea-bg {
   background-color: #181818;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 23px;
+  padding-right: 23px;
   padding-bottom: 20px;
   padding-top: 20px;
   width: 100%;
@@ -402,7 +415,7 @@ body .container .content .questions-group .textarea-cont.focus-mode .number {
 }
 
 body .container .content .media-cont {
-  padding: 40px 20px;
+  padding: 0px 20px;
   background: #2e2e2e;
 }
 
@@ -510,7 +523,7 @@ body .container .content .media-cont .files-name {
 }
 
 body .container .content .contact-group {
-  padding: 10px 15px 20px;
+  padding: 10px 20px 20px;
   background: #474747;
 }
 
@@ -621,7 +634,7 @@ body .container .content .submit-cont .btn-submit:hover {
   border-bottom-left-radius: 0px;
   display: block;
   position: relative;
-  border: 1px solid #ff4063;
+  border: 1px solid #d5274e;
   margin-left: 10px;
 }
 
