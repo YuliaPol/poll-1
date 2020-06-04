@@ -135,7 +135,7 @@ body {
                         color: $medium-grey;
                         text-transform: uppercase;
                         font-size: 14px;
-                        font-weight: 200;
+                        font-weight: 300;
                         position: absolute;
                         top: -2px;
                         left: 10px;
@@ -217,6 +217,11 @@ body {
                 &.textarea-group {
                     background-color: #181818;
                     padding: 0px;
+                    .name-input {
+                        top: -5px;
+                        background-color: #181818;
+                        color: $pink;
+                    }
                     .error {
                         padding-left: 20px;
                         padding-right: 20px;
@@ -226,6 +231,11 @@ body {
                     &.focus-mode  .textarea-bg {
                         background-image: url(../img/situation-active-bg.png);
                         background-color: #474747;
+                    }
+                    &.focus-mode  .name-input {
+                        top: -5px;
+                        background-color: #474747;
+                        color: $pink;
                     }
                 }
                 .textarea-bg {

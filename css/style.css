@@ -168,7 +168,7 @@ body .container .content .form-group .input-bg .name-input {
   color: #898888;
   text-transform: uppercase;
   font-size: 14px;
-  font-weight: 200;
+  font-weight: 300;
   position: absolute;
   top: -2px;
   left: 10px;
@@ -302,6 +302,12 @@ body .container .content .form-group.textarea-group {
   padding: 0px;
 }
 
+body .container .content .form-group.textarea-group .name-input {
+  top: -5px;
+  background-color: #181818;
+  color: #d5274e;
+}
+
 body .container .content .form-group.textarea-group .error {
   padding-left: 20px;
   padding-right: 20px;
@@ -312,6 +318,12 @@ body .container .content .form-group.textarea-group .error {
 body .container .content .form-group.textarea-group.focus-mode .textarea-bg {
   background-image: url(../img/situation-active-bg.png);
   background-color: #474747;
+}
+
+body .container .content .form-group.textarea-group.focus-mode .name-input {
+  top: -5px;
+  background-color: #474747;
+  color: #d5274e;
 }
 
 body .container .content .form-group .textarea-bg {
